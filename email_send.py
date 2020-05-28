@@ -22,7 +22,7 @@ body = "Hey Participant: thankyou for attending the session, following is the ce
 with open(file_name) as file:
     reader = csv.reader(file)
     next(reader)  # Skip header row
-    yag = yagmail.SMTP('nssvitw@gmail.com')
+    yag = yagmail.SMTP(yourgmail account)
     for name, email in reader:
         certicicate_generation(name)
         certi = name+'.pdf'
