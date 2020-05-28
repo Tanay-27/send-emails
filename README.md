@@ -2,7 +2,7 @@
 #This program was created solely for personal use. The owner holds no credit or copyright for the codes or the libraries used. THe program is just an easy to use combination of libraries all of which were ethically downloaded and used.
 #The sole purpose for sharing this was to reduce the effort or others to send multiple mails and small committees to send email. certificates by just providing the templates and list of names and email ids to which one needs to send an email.
 
-#The use the files provided in this repository one needs to install the following libraries:-
+# The use the files provided in this repository one needs to install the following libraries:-
 
 #Yagmail - this is used to shorten and simplify the process of sending emails, each new email id needs to enter passowrd only once and it is then internally stored in a keyring form which is invisible and hence safe when just the code is shared.
 
@@ -11,13 +11,11 @@ from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
 
-# CSV 
-This is used to read csv files
+#CSV -This is used to read csv files
 
-# string
-This is used to typecast the name so as to maintain the alignment.
+#string -This is used to typecast the name so as to maintain the alignment.
 
-# U S E A G E
+# Usage
 The file contains 3 functions:-
 1> csv read:- this helps the user to simply give the csv file, specify the colloumn number containing the name and email id and it returns a list of tuples containing (name,email) this can be skipped is use, has been provided for novice users.
 
