@@ -16,7 +16,6 @@ def certicicate_generation(name_to_write):
     cn = text + '.pdf'
     img.save(cn, "PDF", resolution=500.0)
 
-yag = yagmail.SMTP('nssvitw@gmail.com', 'nss2020login')
 file_name = input('Enter file name: ')
 subject = input('Enter Subject: ')
 body = "Hey Participant: thankyou for attending the session, following is the certificate attached, \n reply to tanay when u get this message \n\n Regards Python"
