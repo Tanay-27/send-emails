@@ -5,10 +5,10 @@ from PIL import ImageFont
 from PIL import ImageDraw
 
 def certicicate_generation(name_to_write):
-    img = Image.open("certi_base.jpg")
+    img = Image.open("template.jpg")
     draw = ImageDraw.Draw(img)
     font_name,size = input('Enter name of Font file(.ttf): '),input('Enter size ')
-    selectFont = ImageFont.truetype("times-new-roman.ttf", size=90)
+    selectFont = ImageFont.truetype("textformat.ttf", size=90)
     text = name_to_write
     length = len(text) // 2 - 1
     lenght = 800 - 37 * length
@@ -18,7 +18,7 @@ def certicicate_generation(name_to_write):
 
 file_name = input('Enter file name: ')
 subject = input('Enter Subject: ')
-body = "Hey Participant: thankyou for attending the session, following is the certificate attached, \n reply to tanay when u get this message \n\n Regards Python"
+body = "content"
 with open(file_name) as file:
     reader = csv.reader(file)
     next(reader)  # Skip header row
